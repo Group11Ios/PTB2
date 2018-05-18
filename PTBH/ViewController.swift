@@ -44,6 +44,15 @@ class ViewController: UIViewController {
         
         if a == 0 {
             result1 = round(((-c)/b) * 1000) / 1000
+            if b == 0 && a == 0 && c == 0{
+                return "Vô số nghiệm"
+            }
+            if b == 0 && a == 0 {
+                
+                return "Vô nghiệm"
+            }
+            
+            return  "x = \(result1)"
         }
         else {
             let delta = b * b - 4 * a * c
